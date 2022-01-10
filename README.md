@@ -1,3 +1,1 @@
-# cppnew
-# cppnew
-# cppnew
+Practise codes
