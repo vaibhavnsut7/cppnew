@@ -3,6 +3,17 @@
 #include<vector>
 using namespace std;
 
+bool outoforder(vector<int> arr,int i){
+    int x=arr[i];
+    if (i==0){
+        return x>arr[i+1];
+    }
+    if (i==arr.size()-1){
+        return x<arr[i-1];
+    }
+    return x>arr[i+1] or x<arr[i-1];
+}
+
 pair <int,int> UnsortedSubarray(vector<int> arr){
     int n=int(arr.size());
     int smallest=INT_MAX;
